@@ -17,3 +17,22 @@ const totalLaunches = rockets.reduce(
 );
 
 //console.log(totalLaunches);
+
+/* EXEMPLO 2 
+  Somando uma matriz de valores
+*/
+
+const array = [
+  [44, 55],
+  [1, -3],
+  [0, 2],
+  [4, 5]
+];
+
+const resultado = array.reduce(
+  (antigo, atual) =>
+    antigo + atual.reduce((antigo, atual) => antigo + atual, 0),
+  0
+);
+
+//console.log(resultado); //108
